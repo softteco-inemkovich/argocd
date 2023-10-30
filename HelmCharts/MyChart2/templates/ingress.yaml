@@ -14,7 +14,7 @@ spec:
     - host: demo.nemkovich.by
       http:
         paths:
-          - path: /app2(/|$)(.*)
+          - path: /app2
             pathType: ImplementationSpecific
             backend:
               service:
