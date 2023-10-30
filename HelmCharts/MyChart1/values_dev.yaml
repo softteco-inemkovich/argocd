@@ -1,7 +1,7 @@
 # Dev Override Values for my Helm Chart
 
 container:
-  image: adv4000/k8sphp:version1
+  image: magguro/go-simple-web:1.0
 
-replicaCount: 4
+replicaCount: 2
 
