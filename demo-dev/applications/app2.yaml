@@ -18,7 +18,7 @@ spec:
       - values_dev.yaml
       parameters:
       - name: "container.image"
-        value: adv4000/app2:v2
+        value: mcr.microsoft.com/windows/servercore:ltsc2019
 
   project: default
   syncPolicy:
