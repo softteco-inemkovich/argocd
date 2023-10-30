@@ -13,9 +13,8 @@ spec:
     metadata:
       labels:
         app: {{ .Release.Name }}
-      name: win-webserver
     spec:
-     containers:
+      containers:
       - name: {{ .Release.Name }}-web
         image: {{ .Values.container.image }}
         command:
@@ -42,5 +41,5 @@ spec:
           $$response.Close() ;$$responseStatus = $$response.StatusCode ;Write-Host('< {0}' -f $$responseStatus)  } ; "
         ports:
         - containerPort: 80
-     nodeSelector:
-      kubernetes.io/os: windows     
+      nodeSelector:
+        kubernetes.io/os: windows     
