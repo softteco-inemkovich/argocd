@@ -3,5 +3,5 @@
 container:
   image: mcr.microsoft.com/windows/servercore:ltsc2019
 
-replicaCount: 2
+replicaCount: 1
 
