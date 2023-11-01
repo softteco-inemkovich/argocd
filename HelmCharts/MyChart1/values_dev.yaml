@@ -3,5 +3,5 @@
 container:
   image: magguro/go-simple-web:1.0
 
-replicaCount: 4
+replicaCount: 2
 
