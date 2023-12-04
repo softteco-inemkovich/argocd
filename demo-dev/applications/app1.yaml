@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name     : in-cluster
-    namespace: app1
+    namespace: portfolio
   source:
     path   : "HelmCharts/MyChart1"
     repoURL: "https://github.com/softteco-inemkovich/argocd.git"
@@ -16,9 +16,9 @@ spec:
     helm:
       valueFiles:
       - values_dev.yaml
-      parameters:
-      - name: "container.image"
-        value: adv4000/app1:v3 # adv4000/app1:v3
+      # parameters:
+      # - name: "container.image"
+      #   value: adv4000/app1:v3 # adv4000/app1:v3
 
   project: default
   syncPolicy:
