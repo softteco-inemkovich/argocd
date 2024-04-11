@@ -10,10 +10,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: demo.nemkovich.by
+    - host: nemkovich.by
       http:
         paths:
-          - path: /app1(/|$)(.*)
+          - path: /hello(/|$)(.*)
             pathType: ImplementationSpecific
             backend:
               service:
